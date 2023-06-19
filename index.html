@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página con imagen de fondo y botones</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mi página con imagen de fondo</h1>
+    <div class="buttons">
+      <button onclick="openPopup('Tercera+salida.mp4')">Video 1</button>
+      <button onclick="openPopup('Segunda+salida.mp4')">Video 2</button>
+      <button onclick="openPopup('Salida+correcta.mp4')">Video 3</button>
+    </div>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <video id="video" controls></video>
+      <span class="close" onclick="closePopup()">&times;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
